@@ -72,6 +72,7 @@
         var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
 			tms: true,
 			opacity: 1.0,
+		        bounds: L.latLngBounds([[50.511680, -2.993774],[50.920351, -2.317369]]),
 			attribution: "Open Government Licence"
 		});
 
