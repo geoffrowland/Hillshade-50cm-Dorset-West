@@ -72,6 +72,7 @@
         var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
 			tms: true,
 			opacity: 1.0,
+		        minZoom: 10,
 		        bounds: L.latLngBounds([[50.511680, -2.993774],[50.920351, -2.317369]]),
 			attribution: "Open Government Licence"
 		});
@@ -80,7 +81,7 @@
         var map = L.map('map', {
             center: [50.68630884264434, -2.4261909615733086],
             zoom: 10,
-            minZoom: 7,
+            minZoom: 6,
             maxZoom: 17,
             layers: [osm, lyr]
         });
